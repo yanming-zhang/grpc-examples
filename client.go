@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	pb "github.com:yanming-zhang/grpc-examples/protos"
+	pb "github.com/yanming-zhang/grpc-examples/protos"
 	"google.golang.org/grpc"
 )
 
@@ -31,6 +31,7 @@ func main() {
 	if len(os.Args) > 1 {
 		name = os.Args[1]
 	}
+
 	// 设置超时时间
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
@@ -38,5 +39,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
+
 	log.Printf("Greeting: %s", r.GetMessage())
 }

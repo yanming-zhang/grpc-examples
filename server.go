@@ -33,6 +33,7 @@ func main() {
 
 	// 创建一个 gRPC 服务端实例
 	s := grpc.NewServer()
+
 	// 注册
 	pb.RegisterGreeterServer(s, &server{})
 	if err := s.Serve(lis); err != nil {
