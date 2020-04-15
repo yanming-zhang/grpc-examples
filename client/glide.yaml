@@ -1,7 +1,0 @@
-package: github.com/grpc-examples/client
-import:
-- package: github.com/yanming-zhang/grpc-examples
-  subpackages:
-  - protos
-- package: google.golang.org/grpc
-  version: v1.26.0

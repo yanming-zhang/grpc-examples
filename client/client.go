@@ -6,7 +6,8 @@ import (
 	"os"
 	"time"
 
-	pb "github.com/yanming-zhang/grpc-examples/protos"
+	pb "grpc-examples/protos"
+
 	"google.golang.org/grpc"
 )
 
